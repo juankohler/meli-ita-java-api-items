@@ -1,17 +1,19 @@
 public class User {
+    private String username;
+    private String password;
+    private String token;
 
-    public String userName;
+    public User() {
 
-    public String token;
-
-
-    public String getUserName() {
-        return userName;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public User(String username,String password) {
+        this.username = username;
+        this.password = password;
+
     }
+
+
 
     public String getToken() {
         return token;
@@ -21,16 +23,29 @@ public class User {
         this.token = token;
     }
 
-    public User(String userName, String token) {
-        this.userName = userName;
-        this.token = token;
+    public String getPassword() {
+        return password;
     }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
 
     @Override
     public String toString() {
         return "User{"+
-               "name=" + userName + '\'' +
-               "token=" + token + '\'' +
+               "username=" + username + '\'' +
+               "password=" + password + '\'' +
                '}';
     }
 }

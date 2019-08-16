@@ -1,7 +1,11 @@
-
 public class Site {
     private String id;
     private String name;
+
+    public Site(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 
     public String getId() {
         return id;
@@ -18,9 +22,5 @@ public class Site {
     public void setName(String name) {
         this.name = name;
     }
-
-    public Site(String id, String name) {
-        this.id = id;
-        this.name = name;
-    }
 }
+
